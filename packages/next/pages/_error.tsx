@@ -44,7 +44,6 @@ export default class Error<P = {}> extends React.Component<P & ErrorProps> {
           </title>
         </Head>
         <div>
-          <style dangerouslySetInnerHTML={{ __html: 'body { margin: 0 }' }} />
           {statusCode ? <h1 style={styles.h1}>{statusCode}</h1> : null}
           <div style={styles.desc}>
             <h2 style={styles.h2}>{title}.</h2>
